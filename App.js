@@ -1,7 +1,7 @@
 import React from  'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
-import Capa from './assets/capa-card.png';
+import Capa from './assets/capa-card-1.png';
 import Foto from './assets/foto-dev.png';
 
 export default function CardPerfil() {
@@ -9,7 +9,7 @@ export default function CardPerfil() {
     <View style={estilos.container}>
       <Image
         source={Capa}
-        style={{ width: 390, height: 480, marginTop: -90, marginBottom: 10 }} /> 
+        style={{ width: 390, height: 480, marginTop: -150, marginBottom: 10 }} /> 
       <Image
         source={Foto}
         style={estilos.img}
@@ -29,19 +29,20 @@ const estilos = StyleSheet.create({
     justifyContent: 'center',
   },
   img: {
-    width: 180,
-    height: 180,
-    margin: 5,
-    borderRadius: 90,
+    width: 100,
+    height: 100,
+    margin: 10,
+    borderRadius: 50,
   },
   titulo: {
     fontSize: 22,
-    marginTop: 5,
-    marginBottom: 5,
+    marginTop: 10,
+    marginBottom: 10,
   },
   descricao: {
-    fontSize: 18,
+    fontSize: 16,
     color: '#555',
     textAlign: 'center',
+    marginHorizontal: 15,
   },
 });
